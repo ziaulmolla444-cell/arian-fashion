@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.A Arian Fashion | Premium Girls Wear Manufacturer</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #0b2545;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+
+        .brand-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #e6b800;
+        }
+
+        .logo-text {
+            color: #e6b800;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #e6b800;
+        }
+
+        /* Hero Banner Section */
+        .hero {
+            background: linear-gradient(rgba(11, 37, 69, 0.85), rgba(11, 37, 69, 0.85)), url('https://picsum.photos') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            margin-top: 70px;
+        }
+
+        .hero-logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 3px solid #e6b800;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            color: #e6b800;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .btn {
+            background-color: #e6b800;
+            color: #0b2545;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+        }
+
+        /* Standard Section Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            position: relative;
+            color: #0b2545;
+        }
+
+        /* Interactive Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-info h3 {
+            margin-bottom: 10px;
+            color: #0b2545;
+        }
+
+        /* Clean Contact Display */
+        .contact-info {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        .contact-info a {
+            color: #0b2545;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: #e6b800;
+        }
+
+        /* Bottom Footer */
+        footer {
+            background-color: #0b2545;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            border-top: 3px solid #e6b800;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo-container">
+                <img src="logo.png" alt="R.A Arian Fashion Logo" class="brand-logo">
+                <div class="logo-text">R.A ARIAN FASHION</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Hero Section -->
+    <section id="home" class="hero">
+        <img src="logo.png" alt="R.A Arian Fashion Logo" class="hero-logo">
+        <h1>R.A Arian Fashion</h1>
+        <p>"Specialized Manufacturers of 1 to 12 Years Girls Wear"</p>
+        <a href="#products" class="btn">View Products</a>
+    </section>
+
+    <!-- Girls Wear Products Section -->
+    <section id="products" class="container">
+        <h2 class="section-title">Our Specialized Categories</h2>
+        <div class="grid">
+            <div class="card">
+                <!-- New Fixed Image 1 -->
+                <div class="card-img" style="background-image: url('https://picsum.photos');"></div>
+                <div class="card-info">
+                    <h3>Casual Girls Dresses</h3>
+                    <p>Comfortable and high-quality daily wear for ages 1 to 12 years.</p>
+                </div>
+            </div>
+            <div class="card">
+                <!-- New Fixed Image 2 -->
+                <div class="card-img" style="background-image: url('https://picsum.photos');"></div>
+                <div class="card-info">
+                    <h3>Party & Festive Frocks</h3>
+                    <p>Beautifully designed premium party wears for little girls.</p>
+                </div>
+            </div>
+            <div class="card">
+                <!-- New Fixed Image 3 -->
+                <div class="card-img" style="background-image: url('https://picsum.photos');"></div>
+                <div class="card-info">
+                    <h3>Designer Kidswear</h3>
+                    <p>Exclusive manufactured designs featuring premium fabric and stitches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Philosophy Section -->
+    <section id="about" style="background-color: #f0f4f8;">
+        <div class="container">
+            <h2 class="section-title">About Our Factory</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 18px;">
+                Welcome to R.A Arian Fashion. We are dedicated manufacturers specializing exclusively in girls' clothing for ages 1 to 12 years. We bring your vision to life with top-grade fabrics, kid-safe stitching, and trending patterns. Our passion drives us to manufacture the most reliable, comfortable, and beautiful garments for children.
+            </p>
+        </div>
+    </section>
+
+    <!-- Active Contact Details Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-info">
+            <p><strong>📍 Factory Address:</strong> Y-2/41, KANTHAL BERIA ROAD, KOLKATA -700044</p>
+            <p><strong>📞 Orders & Inquiry:</strong> 
+                <a href="tel:9007340263">9007340263</a> / 
+                <a href="tel:9748658551">9748658551</a> / 
+                <a href="tel:8910529569">8910529569</a>
+            </p>
+            <p><strong>✉️ Business Email:</strong> <a href="mailto:arianmolla729@gmail.com">arianmolla729@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Copyright Footer Area -->
+    <footer>
+        <p>&copy; 2026 R.A Arian Fashion. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
